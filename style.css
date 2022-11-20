@@ -1,0 +1,457 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Kanit', sans-serif; */
+
+/* Глобальные стили root */
+:root{
+    /* Стили button-elevated */
+    --button-elevated-backgroundColor-default: #D6D8DA;
+    --button-elevated-backgroundColor-hover: #D9D9DF;
+    --button-elevated-backgroundColor-focused: #D7D7DD;
+    --button-elevated-backgroundColor-pressed: #D7D7DD;
+    --button-elevated-backgroundColor-disabled: #E4E4E4;
+    --button-elevated-text-color-default: #081E34;
+    --button-elevated-text-color-disabled: #1C1B1F;
+    --button-elevated-paddings: 8px 16px;
+    --button-elevated-width: fit-content;
+    --buttons-borderRadius: 100px;
+    --buttons-height-small: 38px;
+    --buttons-height-medium: 50px;
+    --buttons-interaction: pointer;
+    /* ____________________________________________________________ */
+
+    /* Стили текстовые */
+
+    /* Headline 2 */
+    --h2-fontFamily: 'Kanit', sans-serif;
+    --h2-fontSize: 48px;
+    --h2-fontWeight: 500;
+    --h2-lineHeight: 120px;
+
+    /* Headline 4 */
+    --h4-fontFamily: 'Inter', sans-serif;
+    --h4-fontSize: 34px;
+    --h4-fontWeight: 700;
+    --h4-lineHeight: 38px;
+
+    /* Headline 5 */
+    --h5-fontFamily: 'Inter', sans-serif;
+    --h5-fontSize: 28px;
+    --h5-fontWeight: 700;
+    --h5-lineHeight: 34px;
+
+    /* Subtitle R 24 pt */
+    --subtitle-r-24-fontFamily: 'Inter', sans-serif;
+    --subtitle-r-24-fontSize: 24px;
+    --subtitle-r-24-fontWeight: 400;
+    --subtitle-r-24-lineHeight: 36px;
+
+    /* Subtitle M 24 pt */
+    --subtitle-m-24-fontFamily: 'Inter', sans-serif;
+    --subtitle-m-24-fontSize: 24px;
+    --subtitle-m-24-fontWeight: 700;
+    --subtitle-m-24-lineHeight: 36px;
+
+    /* Body Reguar 14 pt */
+    --body14-fontFamily: 'Inter', sans-serif;
+    --body14-fontSize: 14px;
+    --body14-fontWeight: 500;
+    --body14-lineHeight: 18px;
+
+    /* Body Reguar 16 pt */
+    --body16-fontFamily: 'Inter', sans-serif;
+    --body16-fontSize: 16px;
+    --body16-fontWeight: 400;
+    --body16-lineHeight: 22px;
+
+    /* Body Reguar 16 pt */
+    --body18-fontFamily: 'Inter', sans-serif;
+    --body18-fontSize: 18px;
+    --body18-fontWeight: 500;
+    --body18-lineHeight: 22px;
+    /* ____________________________________________________________ */
+
+     /* Стили цвета */
+    --black: #000000;
+    
+    /* ____________________________________________________________ */
+
+}
+
+body{
+    padding-left: 160px; 
+    padding-right: 160px; 
+    background-color: #F1F1F1;
+}
+
+/* Стилизация текста */
+h2{
+    font-family: var(--h2-fontFamily);
+    font-size: var(--h2-fontSize);
+    font-weight: var(--h2-fontWeight);
+    line-height: var(--h2-lineHeight);
+    margin: 0;
+}
+
+h4{
+    font-family: var(--h4-fontFamily);
+    font-size: var(--h4-fontSize);
+    font-weight: var(--h4-fontWeight);
+    line-height: var(--h4-lineHeight);
+    margin: 0;
+}
+
+h5{
+    font-family: var(--h5-fontFamily);
+    font-size: var(--h5-fontSize);
+    font-weight: var(--h5-fontWeight);
+    line-height: var(--h5-lineHeight);
+    margin: 0;
+}
+
+.subtitle-r-24{
+    font-family: var(--subtitle-r-24-fontFamily);
+    font-size: var(--subtitle-r-24-fontSize);
+    font-weight: var(--subtitle-r-24-fontWeight);
+    line-height: var(--subtitle-r-24-lineHeight);
+    margin: 0;
+}
+
+.subtitle-m-24{
+    font-family: var(--subtitle-m-24-fontFamily);
+    font-size: var(--subtitle-m-24-fontSize);
+    font-weight: var(--subtitle-m-24-fontWeight);
+    line-height: var(--subtitle-m-24-lineHeight);
+    margin: 0;
+}
+
+.body-r-14{
+    font-family: var(--body14-fontFamily);
+    font-size: var(--body14-fontSize);
+    font-weight: var(--body14-fontWeight);
+    line-height: var(--body14-lineHeight);
+    margin: 0;
+}
+
+.body-r-16{
+    font-family: var(--body16-fontFamily);
+    font-size: var(--body16-fontSize);
+    font-weight: var(--body16-fontWeight);
+    line-height: var(--body16-lineHeight);
+    margin: 0;
+}
+
+.body-r-18{
+    font-family: var(--body18-fontFamily);
+    font-size: var(--body18-fontSize);
+    font-weight: var(--body18-fontWeight);
+    line-height: var(--body18-lineHeight);
+    margin: 0;
+}
+
+/* ____________________________________________________________ */
+
+/* Стилизация button-elevated */
+.btn-elevated-medium{
+    background-color: var(--button-elevated-backgroundColor-default);
+    color: var(--button-elevated-text-color-default);
+    padding: var(--button-elevated-paddings);
+    width: var(--button-elevated-width);
+    height: var(--buttons-height-small);
+    border-radius: var(--buttons-borderRadius);
+    cursor: var(--buttons-interaction);
+    border: none !important;
+    font-family: var(--body14-fontFamily);
+    font-size: var(--body14-fontSize);
+    font-weight: var(--body14-fontWeight);
+    line-height: var(--body14-lineHeight);
+}
+.btn-elevated-medium:hover{
+    background-color: var(--button-elevated-backgroundColor-hover);
+}
+.btn-elevated-medium:focus{
+    background-color: var(--button-elevated-backgroundColor-focused);
+}
+.btn-elevated-medium:active{
+    background-color: var(--button-elevated-backgroundColor-pressed);
+}
+.btn-elevated-medium:disabled{
+    background-color: var(--button-elevated-backgroundColor-disabled);
+    color: var(--button-elevated-text-color-disabled);
+    cursor: none;
+}
+/* ____________________________________________________________ */
+
+/* Убрать стили link */
+
+a:-webkit-any-link {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:-webkit-any-link:active{
+    color: #000000
+}
+
+/* ____________________________________________________________ */
+
+/* Стилизация logo */
+
+.logo{
+    font-family: 'Kanit', sans-serif;;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0;
+}
+
+/* Стилизация цвета */
+.black-05{
+    color: #000000;
+    opacity: 0.5;
+}
+
+/* ____________________________________________________________ */
+
+
+
+/* Позиционирование блоков */
+
+header{
+    padding: 24px 0px 24px 0px;
+}
+
+.headline-section{
+    padding: 64px 0px 64px 0;
+}
+
+.news-container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    animation-name: newsAppereance;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    scroll-behavior: smooth;
+}
+
+.item-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 162px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #00000034;
+}
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 615px;
+}
+
+.news-info{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.news-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.img-avatar{
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.cover-img{
+    background-size: cover;
+}
+
+.img-left{
+    background-size: cover;
+    background-position: center;
+    width: 265px;
+    height: 265px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+    transition: 500ms;
+}
+.img-left:hover{
+    width: 325px;
+    height: 325px;
+}
+
+.nav-back{
+    padding: 64px 0px 64px 0px;
+}
+
+.topic-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation-name: contentAppereance;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    scroll-behavior: smooth;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.author-data{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.topic-content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 70px;
+    animation-name: contentAppereance;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    scroll-behavior: smooth;
+}
+
+.content-head, .content-body{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ____________________________________________________________ */
+
+
+/* Небольшая анимация блоков */
+@keyframes newsAppereance{
+    0%{
+        margin-top: 16%;
+        opacity: 20%;
+    }
+    100%{
+        margin-top: 0%;
+        opacity: 100;
+    }
+}
+
+@keyframes contentAppereance{
+    0%{
+        opacity: 20%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+/* ____________________________________________________________ */
+
+/* Адаптив */
+@media only screen and (max-width: 1170px) {
+    body{
+        padding-left: 80px; 
+        padding-right: 80px; 
+    }
+    .headline-section{
+        display: flex;
+        justify-content: center;
+    }
+    .item-card{
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+    }
+    .content-right{
+        align-items: center;
+        text-align: center;
+    }
+    .news-info{
+        justify-content: center;
+    }
+    .news-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .topic-info{
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    .author-info{
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 638px) {
+    body{
+        padding-left: 24px; 
+        padding-right: 24px; 
+    }
+    .item-card{
+        gap: 32px;
+    }
+    h5{
+        font-family: var(--h5-fontFamily);
+        font-size: 24px;
+        font-weight: var(--h5-fontWeight);
+        line-height: 36px;
+        margin: 0;
+    }
+    .body-r-16{
+        font-family: var(--body16-fontFamily);
+        font-size: var(--body14-fontSize);
+        font-weight: var(--body14-fontWeight);
+        line-height: var(--body14-lineHeight);
+        margin: 0;
+    }
+    .body-r-14{
+        font-family: var(--body14-fontFamily);
+        font-size: 12px;
+        font-weight: var(--body14-fontWeight);
+        line-height: 18px;
+        margin: 0;
+    }
+    h4{
+        font-family: var(--h5-fontFamily);
+        font-size: var(--h5-fontSize);
+        font-weight: var(--h5-fontWeight);
+        line-height: var(--h5-lineHeight);
+        margin: 0;
+    }
+    .subtitle-r-24{
+        font-family: var(--body18-fontFamily);
+        font-size: var(--body18-fontSize);
+        font-weight: var(--body18-fontWeight);
+        line-height: var(--body18-lineHeight);
+        margin: 0;
+    }
+    .body-r-18{
+        font-family: var(--body16-fontFamily);
+        font-size: var(--body14-fontSize);
+        font-weight: var(--body14-fontWeight);
+        line-height: var(--body14-lineHeight);
+        margin: 0;
+    }
+
+}
